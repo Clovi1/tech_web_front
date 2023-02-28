@@ -1,11 +1,24 @@
-import React from 'react';
+import Container from "@mui/material/Container";
 
-const App = () => {
+// @ts-ignore
+import {Header} from "./components";
+// @ts-ignore
+import {Home, FullPost, Registration, AddPost, Login} from "./pages";
+import {FC} from "react";
+
+const App: FC = () => {
     return (
-        <div>
-            
-        </div>
+        <>
+            <Header/>
+            <Container maxWidth="lg">
+                <Home/>
+                {/*<FullPost />*/}
+                {/*<AddPost />*/}
+                {/*<Login />*/}
+                {/*<Registration />*/}
+            </Container>
+        </>
     );
-};
+}
 
 export default App;
